@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2026-01-06T20:23:33.258788" rpa="false" schemaversion="5">
+<suite id="s1" name="Projet-Tests" source="C:\Users\ADmiN\projet-tests">
+<suite id="s1-s1" name="Tests Ihm" source="C:\Users\ADmiN\projet-tests\tests ihm">
+<suite id="s1-s1-s1" name="Connexions-Invalides" source="C:\Users\ADmiN\projet-tests\tests ihm\connexions-invalides.robot">
+<test id="s1-s1-s1-t1" name="Test Utilisateur Valide Mot De Passe Non Valide" line="14">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T20:23:34.510036" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T20:23:56.947873" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T20:23:34.508216" elapsed="25.216607"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T20:23:59.725960" elapsed="0.138220"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T20:23:59.866363" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T20:23:59.865016" elapsed="22.136607"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:23:34.504777" elapsed="47.497566"/>
+</kw>
+<kw name="Un Message d'Erreur Doit Etre Visible Apres Une Connexion Incorrecte">
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:24:22.014809" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:24:22.008286" elapsed="0.446484"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T20:24:22.456370" elapsed="0.730993"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:24:22.006359" elapsed="1.181743"/>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:24:23.192480" level="INFO">Clicking element 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:24:23.191038" elapsed="0.484183"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T20:24:23.679236" level="INFO">Typing text 'robot' into text field 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<arg>${nom_utilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:24:23.675960" elapsed="0.564803"/>
+</kw>
+<arg>${nom utilisateur}</arg>
+<status status="PASS" start="2026-01-06T20:24:23.189136" elapsed="1.052402"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:24:24.247965" level="INFO">Clicking element 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:24:24.245800" elapsed="0.579884"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T20:24:24.831037" level="INFO">Typing text 'azerty' into text field 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<arg>${mot_de_passe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:24:24.829419" elapsed="0.372466"/>
+</kw>
+<arg>${mot de passe}</arg>
+<status status="PASS" start="2026-01-06T20:24:24.242471" elapsed="0.959992"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-01-06T20:24:25.206139" level="INFO">Clicking button 'css=.homey_login_button'.</msg>
+<arg>${BOUTON VALIDER}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:24:25.204636" elapsed="0.360211"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:24:25.203197" elapsed="0.362884"/>
+</kw>
+<kw name="Vérifier Que Le Message d'Erreur Est Visible">
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T20:24:25.570278" elapsed="4.089888"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="Selenium2Library">
+<msg time="2026-01-06T20:24:29.665934" level="INFO">Verifying element 'css=#modal-login .error' does not contain exact text ''.</msg>
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2026-01-06T20:24:29.661306" elapsed="0.065996"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:24:25.567970" elapsed="4.160735"/>
+</kw>
+<arg>robot</arg>
+<arg>azerty</arg>
+<status status="PASS" start="2026-01-06T20:24:22.004151" elapsed="7.725904"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:23:34.471803" elapsed="55.259597"/>
+</test>
+<status status="PASS" start="2026-01-06T20:23:33.437792" elapsed="56.305795"/>
+</suite>
+<status status="PASS" start="2026-01-06T20:23:33.408825" elapsed="56.360065"/>
+</suite>
+<status status="PASS" start="2026-01-06T20:23:33.284838" elapsed="56.533022"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Projet-Tests" id="s1" pass="1" fail="0" skip="0">Projet-Tests</stat>
+<stat name="Tests Ihm" id="s1-s1" pass="1" fail="0" skip="0">Projet-Tests.Tests Ihm</stat>
+<stat name="Connexions-Invalides" id="s1-s1-s1" pass="1" fail="0" skip="0">Projet-Tests.Tests Ihm.Connexions-Invalides</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-06T20:23:56.947873" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

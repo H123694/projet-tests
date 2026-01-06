@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2026-01-06T19:57:01.520710" rpa="false" schemaversion="5">
+<suite id="s1" name="Projet-Tests" source="C:\Users\ADmiN\projet-tests">
+<suite id="s1-s1" name="ROBOT API" source="C:\Users\ADmiN\projet-tests\ROBOT_API">
+<suite id="s1-s1-s1" name="00 Requête GET HTML Google" source="C:\Users\ADmiN\projet-tests\ROBOT_API\00_Requête_GET_HTML_Google.robot">
+<test id="s1-s1-s1-t1" name="Test Requête Get Simple" line="4">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:14.390285" level="INFO">GET Request : url=https://www.google.com/ 
+ path_url=/ 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-01-06T19:57:14.390886" level="INFO">GET Response : url=https://www.google.com/ 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:14 GMT', 'Expires': '-1', 'Cache-Control': 'private, max-age=0', 'Content-Type': 'text/html; charset=ISO-8859-1', 'Content-Security-Policy-Report-Only': "object-src 'none';base-uri 'self';script-src 'nonce-ChOtKs9rokoReK4ZRxCXHQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp", 'Accept-CH': 'Sec-CH-Prefers-Color-Scheme', 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Content-Encoding': 'gzip', 'Server': 'gws', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': '__Secure-STRP=AD6Dogt78-cUphS1bm8o0p28Amt4k70uofSz9ridFrXUE_Hvpr-zahK0hg49H7hXidaJVXuOVQd7BR_Dd0mi-gyzMLJhBCXaLXZE; expires=Tue, 06-Jan-2026 19:02:14 GMT; path=/; domain=.google.com; Secure; SameSite=strict, AEC=AaJma5sweUKEs_CQCEh6BfXOiKuBwg4Hw2K1ydUXGQ3BEnCjxxXFbvTjsw; expires=Sun, 05-Jul-2026 18:57:14 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=527=UGhccDXyGXGBaoK33w1rDYEo4vnhdoCKebDUVaqO3-pt_sKRNyk7nX_IlmToVdqZh1jJWXgYx1bsDtSnVldAXI-FdY8yEKyIkIlv1BCJK8E-e6tVuqS_KEVHbORMUl98Oww60UagO6VaOQmUQLjK2PATniqqMvGYMzNhEh_8j_HoOjsreLu7AVxwApMDN2zNetL6NwC6SICdlutRQwsaKhDrtkSn4ANp; expires=Wed, 08-Jul-2026 18:57:14 GMT; path=/; domain=.google.com; HttpOnly, __Secure-BUCKET=CLIB; expires=Sun, 05-Jul-2026 18:57:14 GMT; path=/; domain=.google.com; Secure; HttpOnly', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} 
+ body=&lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="fr-MA"&gt;&lt;head&gt;&lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"&gt;&lt;meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce="ChOtKs9rokoReK4ZRxCXHQ"&gt;(function(){var _g={kEI:'Cltdady-G-_T1sQPvtHZgQI',kEXPI:'0,4240045,14111,64702,6397,354504,270476,5249849,12,12531,36811500,25228681,164326,53228,30627,9139,11153,64165,61059,28338,48283,30,28249,3,2745,7714,14749,18636,4719,21511,5746,19845,46339,17989,11,2679,200,1018,4372,4532,1760,16179,2646,101,2,4,1,4434,12368,2305,5031,14505,1383,4,1514,2227,1128,197,149,5664,2,4205,5,1789,16,9132,775,4384,2,876,22,2207,5089,19,3007,24,772,9152,14102,1400,10938,1031,1034,4303,845,2047,1,1,7,437,1128,3,2842,9,27,8,3055,1012,1745,4,4635,10558,4,1903,268,29,12,3,28,241,296,5,1113,389,4,298,2307,42,5,2708,2111,15,164,570,298,5201,1055,2997,850,425,7,1786,1048,2,2433,7284,4,82,55,2517,2,5724,9,602,67,1582,4,1882,6,2,2,2,1491,746,1798,228,4,1286,477,746,5,1234,1,2,1402,3,879,238,242,3,2140,3,2788,49,10,215,441,156,2,2,637,1008,191,4,28,1900,1638,544,4,27,1540,114,373,548,1296,5,97,187,862,1243,5,179,80,5,197,2366,19,1446,94,4,235,1190,212,387,4,138,198,137,230,1996,5,434,134,6,154,5,131,18,513,1339,24,77,888,196,1983,17,141,398,4,586,4,1571,260,5,969,4,1387,110,4,600,3,2,1014,375,105,334,140,4,670,279,328,19,482,4,32,4,448,396,868,155,122,21,2,691,4,40,4,1974,556,6,16,323,1,813,3848,710,77,4,84,401,640,3,2,2,2,147,4,1940,4,61,993,4,245,681,458,6,200,2,344,1,1093,33,878,51,104,1022,755,657,4,740,42,4,40,295,1,2,1191,52,441,11,119,5,613,671,16,44,220,169,165,560,98,54,16,262,4,590,156,4,31,1437,830,123,10,1913,141,4,285,2,3,2,2,2,38,12,530,59,610,685,4,5,470,1083,2,257,221,402,3,2,2,2,84,350,6721,20595509,416079,5,2992,4,2960,3,2022,6469,2,1558,3,9387,3791,1696,1194,3,739,6,1156,3,1310,2,4,2,31,101,4128,4,396,405,275,282,3,88,649,6492528,2532,2,695,424,2005304,548100,99,1077914,11271365,234052,4,614488,1,3',kBL:'HonF',kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn='webhp';google.kHL='fr-MA';google.rdn=false;})();(function(){
+var g=this||self;function k(){return window.google&amp;&amp;window.google.kOPI||null};var l,m=[];function n(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||l}function p(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("leid")));)a=a.parentNode;return b}function q(a){/^http:/i.test(a)&amp;&amp;window.location.protocol==="https:"&amp;&amp;(google.ml&amp;&amp;google.ml(Error("a"),!1,{src:a,glmm:1}),a="");return a}
+function r(a,b,d,c,h){var e="";b.search("&amp;ei=")===-1&amp;&amp;(e="&amp;ei="+n(c),b.search("&amp;lei=")===-1&amp;&amp;(c=p(c))&amp;&amp;(e+="&amp;lei="+c));var f=b.search("&amp;cshid=")===-1&amp;&amp;a!=="slh";c="&amp;zx="+Date.now().toString();g._cshid&amp;&amp;f&amp;&amp;(c+="&amp;cshid="+g._cshid);(d=d())&amp;&amp;(c+="&amp;opi="+d);return"/"+(h||"gen_204")+"?atyp=i&amp;ct="+String(a)+"&amp;cad="+(b+e+c)};l=google.kEI;google.getEI=n;google.getLEI=p;google.ml=function(){return null};google.log=function(a,b,d,c,h,e){e=e===void 0?k:e;d||(d=r(a,b,e,c,h));if(d=q(d)){a=new Image;var f=m.length;m[f]=a;a.onerror=a.onload=a.onabort=function(){delete m[f]};a.src=d}};google.logUrl=function(a,b){b=b===void 0?k:b;return r("",a,b)};}).call(this);(function(){google.y={};google.sy={};function e(a,b,c){if(a)var d=a.id;else{do d=Math.random();while(c[d])}c[d]=[a,b]}var f;(f=google).x||(f.x=function(a,b){e(a,b,google.y)});var g;(g=google).sx||(g.sx=function(a,b){e(a,b,google.sy)});google.lm=[];var h;(h=google).plm||(h.plm=function(a){google.lm.push.apply(google.lm,a)});google.lq=[];var k;(k=google).load||(k.load=function(a,b,c){google.lq.push([[a],b,c])});var l;(l=google).loadAll||(l.loadAll=function(a,b){google.lq.push([a,b])});google.bx=!1;var m;(m=google).lx||(m.lx=function(){});var n=[],p;(p=google).fce||(p.fce=function(a,b,c,d){n.push([a,b,c,d])});google.qce=n;google.adl=[];}).call(this);google.f={};(function(){
+document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a=c==="1"||c==="q"&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if(a.tagName==="A"){a=a.getAttribute("data-nohref")==="1";break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;style&gt;#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+&lt;/style&gt;&lt;style&gt;body,td,a,p,.h{font-family:sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1967d2}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px sans-serif}.gsfs{font:17px sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#1f1f1f}a{color:#681da8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1967d2}a:visited{color:#681da8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#ecedee;border:solid 1px;border-color:#d2d2d2 #70757a #70757a #d2d2d2;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;color:#1f1f1f;border:none;cursor:pointer;height:30px;margin:0;outline:0;font:15px sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}.Ucigb{width:458px}&lt;/style&gt;&lt;script nonce="ChOtKs9rokoReK4ZRxCXHQ"&gt;(function(){window.google.erd={jsr:1,bv:2341,de:true,dpf:'Mp6_K1r_QS9BJABN07pu-aXlHpC7QJLuMgV0LTPABlY'};
+var g=this||self;var k,l=(k=g.mei)!=null?k:1,m,p=(m=g.diel)!=null?m:0,q,r=(q=g.sdo)!=null?q:!0,t=0,u,w=google.erd,x=w.jsr;google.ml=function(a,b,d,n,e){e=e===void 0?2:e;b&amp;&amp;(u=a&amp;&amp;a.message);d===void 0&amp;&amp;(d={});d.cad="ple_"+google.ple+".aple_"+google.aple;if(google.dl)return google.dl(a,e,d,!0),null;b=d;if(x&lt;0){window.console&amp;&amp;console.error(a,b);if(x===-2)throw a;b=!1}else b=!a||!a.message||a.message==="Error loading script"||t&gt;=l&amp;&amp;!n?!1:!0;if(!b)return null;t++;d=d||{};b=encodeURIComponent;var c="/gen_204?atyp=i&amp;ei="+b(google.kEI);google.kEXPI&amp;&amp;(c+="&amp;jexpid="+b(google.kEXPI));c+="&amp;srcpg="+b(google.sn)+"&amp;jsr="+b(w.jsr)+
+"&amp;bver="+b(w.bv);w.dpf&amp;&amp;(c+="&amp;dpf="+b(w.dpf));var f=a.lineNumber;f!==void 0&amp;&amp;(c+="&amp;line="+f);var h=a.fileName;h&amp;&amp;(h.indexOf("-extension:/")&gt;0&amp;&amp;(e=3),c+="&amp;script="+b(h),f&amp;&amp;h===window.location.href&amp;&amp;(f=document.documentElement.outerHTML.split("\n")[f],c+="&amp;cad="+b(f?f.substring(0,300):"No script found.")));google.ple&amp;&amp;google.ple===1&amp;&amp;(e=2);c+="&amp;jsel="+e;for(var v in d)c+="&amp;",c+=b(v),c+="=",c+=b(d[v]);c=c+"&amp;emsg="+b(a.name+": "+a.message);c=c+"&amp;jsst="+b(a.stack||"N/A");c.length&gt;=12288&amp;&amp;(c=c.substring(0,12288));a=c;n||google.log(0,"",a);return a};window.onerror=function(a,b,d,n,e){u!==a&amp;&amp;(a=e instanceof Error?e:Error(a),d===void 0||"lineNumber"in a||(a.lineNumber=d),b===void 0||"fileName"in a||(a.fileName=b),google.ml(a,!1,void 0,!1,a.name==="SyntaxError"||a.message.substring(0,11)==="SyntaxError"||a.message.indexOf("Script error")!==-1?3:p));u=null;r&amp;&amp;t&gt;=l&amp;&amp;(window.onerror=null)};})();&lt;/script&gt;&lt;/head&gt;&lt;body bgcolor="#fff"&gt;&lt;script nonce="ChOtKs9rokoReK4ZRxCXHQ"&gt;(function(){var src='/images/nav_logo229.png';var iesg=false;document.body.onload = function(){window.n &amp;&amp; window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&amp;&amp;document.f.q.focus();document.gbqf&amp;&amp;document.gbqf.q.focus();}
+}
+})();&lt;/script&gt;&lt;div id="mngb"&gt;&lt;div id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Recherche&lt;/b&gt; &lt;a class=gb1 href="https://www.google.com/imghp?hl=fr&amp;tab=wi"&gt;Images&lt;/a&gt; &lt;a class=gb1 href="https://maps.google.com/maps?hl=fr&amp;tab=wl"&gt;Maps&lt;/a&gt; &lt;a class=gb1 href="https://play.google.com/?hl=fr&amp;tab=w8"&gt;Play&lt;/a&gt; &lt;a class=gb1 href="https://www.youtube.com/?tab=w1"&gt;YouTube&lt;/a&gt; &lt;a class=gb1 href="https://news.google.com/?tab=wn"&gt;Actualités&lt;/a&gt; &lt;a class=gb1 href="https://mail.google.com/mail/?tab=wm"&gt;Gmail&lt;/a&gt; &lt;a class=gb1 href="https://drive.google.com/?tab=wo"&gt;Drive&lt;/a&gt; &lt;a class=gb1 style="text-decoration:none" href="https://www.google.co.ma/intl/fr/about/products?tab=wh"&gt;&lt;u&gt;Plus&lt;/u&gt; &amp;raquo;&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100%&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;/span&gt;&lt;a href="http://www.google.co.ma/history/optout?hl=fr" class=gb4&gt;Historique Web&lt;/a&gt; | &lt;a  href="/preferences?hl=fr" class=gb4&gt;Paramètres&lt;/a&gt; | &lt;a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?hl=fr&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAAQ" class=gb4&gt;Connexion&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style=left:0&gt;&lt;/div&gt;&lt;div class=gbh style=right:0&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;br clear="all" id="lgpd"&gt;&lt;div&gt;&lt;img alt="Google" height="92" src="/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png" style="padding:28px 0 14px" width="272" id="hplogo"&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;form action="/search" name="f"&gt;&lt;table cellpadding="0" cellspacing="0"&gt;&lt;tr valign="top"&gt;&lt;td width="25%"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="center" nowrap=""&gt;&lt;input name="ie" value="ISO-8859-1" type="hidden"&gt;&lt;input value="fr-MA" name="hl" type="hidden"&gt;&lt;input name="source" type="hidden" value="hp"&gt;&lt;input name="biw" type="hidden"&gt;&lt;input name="bih" type="hidden"&gt;&lt;div class="ds" style="height:32px;margin:4px 0"&gt;&lt;div style="position:relative;zoom:1"&gt;&lt;input class="lst Ucigb" style="margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#1f1f1f;padding-... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2026-01-06T19:57:14.391877" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<var>${reponse}</var>
+<arg>https://www.google.com</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-01-06T19:57:01.977888" elapsed="12.414075"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:01.975607" elapsed="12.417243"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:01.629259" elapsed="12.766425"/>
+</suite>
+<suite id="s1-s1-s2" name="01 Requete GET TestAcademy" source="C:\Users\ADmiN\projet-tests\ROBOT_API\01_Requete_GET_TestAcademy.robot">
+<test id="s1-s1-s2-t1" name="Test 001 Requete GET" line="9">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:14.766053" level="INFO">&amp;{Params} = { page=1 | per_page=6 }</msg>
+<var>&amp;{Params}</var>
+<arg>page=1</arg>
+<arg>per_page=6</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:14.765147" elapsed="0.000988"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:14.767284" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:14.766707" elapsed="0.000637"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:16.985870" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/users?page=1&amp;per_page=6 
+ path_url=/api/users?page=1&amp;per_page=6 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-01-06T19:57:16.986197" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/users?page=1&amp;per_page=6 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:17 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip', 'rndr-id': 'ad445c3d-0720-469a', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '9b9d70afa99c17f6-MAD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@api.testacademy.fr","first_name":"George","last_name":"Bluth","avatar":"https://api.testacademy.fr/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@api.testacademy.fr","first_name":"Janet","last_name":"Weaver","avatar":"https://api.testacademy.fr/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@api.testacademy.fr","first_name":"Emma","last_name":"Wong","avatar":"https://api.testacademy.fr/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@api.testacademy.fr","first_name":"Eve","last_name":"Holt","avatar":"https://api.testacademy.fr/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@api.testacademy.fr","first_name":"Charles","last_name":"Morris","avatar":"https://api.testacademy.fr/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@api.testacademy.fr","first_name":"Tracey","last_name":"Ramos","avatar":"https://api.testacademy.fr/img/faces/6-image.jpg"}],"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-01-06T19:57:16.986494" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>params=${Params}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-01-06T19:57:14.767826" elapsed="2.218735"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-06T19:57:16.989113" level="INFO">${ReponseJson} = {'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacadem...</msg>
+<var>${ReponseJson}</var>
+<arg>${Reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-06T19:57:16.987422" elapsed="0.001786"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-06T19:57:16.990318" level="INFO">{'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacademy.fr/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@api.testacademy.fr', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://api.testacademy.fr/img/faces/2-image.jpg'}, {'id': 3, 'email': 'emma.wong@api.testacademy.fr', 'first_name': 'Emma', 'last_name': 'Wong', 'avatar': 'https://api.testacademy.fr/img/faces/3-image.jpg'}, {'id': 4, 'email': 'eve.holt@api.testacademy.fr', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://api.testacademy.fr/img/faces/4-image.jpg'}, {'id': 5, 'email': 'charles.morris@api.testacademy.fr', 'first_name': 'Charles', 'last_name': 'Morris', 'avatar': 'https://api.testacademy.fr/img/faces/5-image.jpg'}, {'id': 6, 'email': 'tracey.ramos@api.testacademy.fr', 'first_name': 'Tracey', 'last_name': 'Ramos', 'avatar': 'https://api.testacademy.fr/img/faces/6-image.jpg'}], 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${ReponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-06T19:57:16.989882" elapsed="0.000558"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2026-01-06T19:57:17.048327" level="INFO">${ListeUtilisateurs} = [{'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacademy.fr/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@api...</msg>
+<var>${ListeUtilisateurs}</var>
+<arg>${ReponseJson}</arg>
+<arg>data[:]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2026-01-06T19:57:16.990997" elapsed="0.057515"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2026-01-06T19:57:17.050294" level="INFO">${PremierUtilisateur} = {'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacademy.fr/img/faces/1-image.jpg'}</msg>
+<var>${PremierUtilisateur}</var>
+<arg>${ListeUtilisateurs}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2026-01-06T19:57:17.049619" elapsed="0.000785"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${PremierUtilisateur['first_name']}</arg>
+<arg>George</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-01-06T19:57:17.051214" elapsed="0.000882"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:14.763338" elapsed="2.289821"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:14.400641" elapsed="2.654946"/>
+</suite>
+<suite id="s1-s1-s3" name="02 Requete POST TestAcademy" source="C:\Users\ADmiN\projet-tests\ROBOT_API\02_Requete_POST_TestAcademy.robot">
+<test id="s1-s1-s3-t1" name="Test Requete POST" line="11">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:17.070416" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:17.069519" elapsed="0.000996"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:17.072827" level="INFO">&amp;{Corps_Requete} = { first_name=Anass | last_name=Rami | email=anass.rami@api.testacademy.fr }</msg>
+<var>&amp;{Corps_Requete}</var>
+<arg>first_name=${FirstName_Attendu}</arg>
+<arg>last_name=${LastName_Attendu}</arg>
+<arg>email=${Email_Attendu}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:17.071860" elapsed="0.001128"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:18.491268" level="INFO">POST Request : url=https://mock-api-h0g7.onrender.com/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '86', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Anass", "last_name": "Rami", "email": "anass.rami@api.testacademy.fr"}' 
+ </msg>
+<msg time="2026-01-06T19:57:18.491485" level="INFO">POST Response : url=https://mock-api-h0g7.onrender.com/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:18 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'CF-RAY': '9b9d70baeb4403dd-MAD', 'rndr-id': '62af8728-8013-438a', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Anass","last_name":"Rami","email":"anass.rami@api.testacademy.fr","avatar":"https://api.testacademy.fr/img/faces/13-image.jpg","id":"13","createdAt":"2026-01-06T18:57:18.702539"} 
+ </msg>
+<msg time="2026-01-06T19:57:18.491759" level="INFO">${Reponse} = &lt;Response [201]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>json=${Corps_Requete}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=201</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2026-01-06T19:57:17.073640" elapsed="1.418168"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-06T19:57:18.494037" level="INFO">{'first_name': 'Anass', 'last_name': 'Rami', 'email': 'anass.rami@api.testacademy.fr', 'avatar': 'https://api.testacademy.fr/img/faces/13-image.jpg', 'id': '13', 'createdAt': '2026-01-06T18:57:18.702539'}</msg>
+<arg>${Reponse.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.492618" elapsed="0.001561"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Reponse.json()}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.494806" elapsed="0.001156"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Reponse.json()}</arg>
+<arg>createdAt</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.496588" elapsed="0.001091"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:18.499459" level="INFO">${first_name} = Anass</msg>
+<var>${first_name}</var>
+<arg>${Reponse.json()}</arg>
+<arg>first_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.498301" elapsed="0.001232"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${FirstName_Attendu}</arg>
+<arg>${first_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.500125" elapsed="0.000545"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:18.502338" level="INFO">${last_name} = Rami</msg>
+<var>${last_name}</var>
+<arg>${Reponse.json()}</arg>
+<arg>last_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.501210" elapsed="0.001199"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${LastName_Attendu}</arg>
+<arg>${last_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.503195" elapsed="0.000479"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:18.505352" level="INFO">${email} = anass.rami@api.testacademy.fr</msg>
+<var>${email}</var>
+<arg>${Reponse.json()}</arg>
+<arg>email</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.504209" elapsed="0.001229"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Email_Attendu}</arg>
+<arg>${email}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.507169" elapsed="0.000800"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:17.066614" elapsed="1.442429"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:17.058488" elapsed="1.460053"/>
+</suite>
+<suite id="s1-s1-s4" name="03 Requete PUT TestAcademy" source="C:\Users\ADmiN\projet-tests\ROBOT_API\03_Requete_PUT_TestAcademy.robot">
+<test id="s1-s1-s4-t1" name="Test Requete PUT" line="12">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:18.550798" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.549232" elapsed="0.002371"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:18.554242" level="INFO">&amp;{Corps_Requete} = { first_name=Janet | last_name=Zion-Weaver | email=janet.zion@api.testacademy.fr }</msg>
+<var>&amp;{Corps_Requete}</var>
+<arg>first_name=${FirstName_Attendu}</arg>
+<arg>last_name=${LastName_Attendu}</arg>
+<arg>email=${Email_Attendu}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.552532" elapsed="0.001885"/>
+</kw>
+<kw name="PUT" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:19.836256" level="INFO">PUT Request : url=https://mock-api-h0g7.onrender.com/api/users/13 
+ path_url=/api/users/13 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '93', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Janet", "last_name": "Zion-Weaver", "email": "janet.zion@api.testacademy.fr"}' 
+ </msg>
+<msg time="2026-01-06T19:57:19.836455" level="INFO">PUT Response : url=https://mock-api-h0g7.onrender.com/api/users/13 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:20 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip', 'rndr-id': 'bccde0f7-95f4-4af1', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '9b9d70c3bb19ec89-MAD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Janet","last_name":"Zion-Weaver","email":"janet.zion@api.testacademy.fr","avatar":"https://api.testacademy.fr/img/faces/13-image.jpg","updatedAt":"2026-01-06T18:57:20.080734"} 
+ </msg>
+<msg time="2026-01-06T19:57:19.836798" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/users/${Id_Utilisateur}</arg>
+<arg>json=${Corps_Requete}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a PUT request.</doc>
+<status status="PASS" start="2026-01-06T19:57:18.555321" elapsed="1.281562"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-06T19:57:19.839939" level="INFO">{'first_name': 'Janet', 'last_name': 'Zion-Weaver', 'email': 'janet.zion@api.testacademy.fr', 'avatar': 'https://api.testacademy.fr/img/faces/13-image.jpg', 'updatedAt': '2026-01-06T18:57:20.080734'}</msg>
+<arg>${Reponse.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.838224" elapsed="0.001917"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Reponse.json()}</arg>
+<arg>updatedAt</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.841423" elapsed="0.001223"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:19.845733" level="INFO">${first_name} = Janet</msg>
+<var>${first_name}</var>
+<arg>${Reponse.json()}</arg>
+<arg>first_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.843936" elapsed="0.001909"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${FirstName_Attendu}</arg>
+<arg>${first_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.847120" elapsed="0.001333"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:19.851535" level="INFO">${last_name} = Zion-Weaver</msg>
+<var>${last_name}</var>
+<arg>${Reponse.json()}</arg>
+<arg>last_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.849370" elapsed="0.002297"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${LastName_Attendu}</arg>
+<arg>${last_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.853041" elapsed="0.000723"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:19.856248" level="INFO">${email} = janet.zion@api.testacademy.fr</msg>
+<var>${email}</var>
+<arg>${Reponse.json()}</arg>
+<arg>email</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.854710" elapsed="0.001637"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Email_Attendu}</arg>
+<arg>${email}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.858079" elapsed="0.001227"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:18.547130" elapsed="1.316650"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:18.537847" elapsed="1.328991"/>
+</suite>
+<suite id="s1-s1-s5" name="04 Requete DELETE TestAcademy" source="C:\Users\ADmiN\projet-tests\ROBOT_API\04_Requete_DELETE_TestAcademy.robot">
+<test id="s1-s1-s5-t1" name="Test Requete DELETE" line="10">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:19.891717" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.890856" elapsed="0.000969"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:19.894820" level="INFO">&amp;{Corps_Requete} = { first_name=Temp | last_name=User | email=temp.user@test.com }</msg>
+<var>&amp;{Corps_Requete}</var>
+<arg>first_name=Temp</arg>
+<arg>last_name=User</arg>
+<arg>email=temp.user@test.com</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.893421" elapsed="0.001614"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:21.360730" level="INFO">POST Request : url=https://mock-api-h0g7.onrender.com/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '74', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Temp", "last_name": "User", "email": "temp.user@test.com"}' 
+ </msg>
+<msg time="2026-01-06T19:57:21.360928" level="INFO">POST Response : url=https://mock-api-h0g7.onrender.com/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:21 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'CF-RAY': '9b9d70cceae1ec91-MAD', 'rndr-id': 'bf359acb-69b4-4830', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Temp","last_name":"User","email":"temp.user@test.com","avatar":"https://api.testacademy.fr/img/faces/14-image.jpg","id":"14","createdAt":"2026-01-06T18:57:21.549435"} 
+ </msg>
+<msg time="2026-01-06T19:57:21.361193" level="INFO">${Reponse_POST} = &lt;Response [201]&gt;</msg>
+<var>${Reponse_POST}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>json=${Corps_Requete}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=201</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2026-01-06T19:57:19.901929" elapsed="1.459313"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:21.363892" level="INFO">${id_to_delete} = 14</msg>
+<var>${id_to_delete}</var>
+<arg>${Reponse_POST.json()}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:21.362207" elapsed="0.001801"/>
+</kw>
+<kw name="DELETE" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:23.949517" level="INFO">DELETE Request : url=https://mock-api-h0g7.onrender.com/api/users/14 
+ path_url=/api/users/14 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2026-01-06T19:57:23.949724" level="INFO">DELETE Response : url=https://mock-api-h0g7.onrender.com/api/users/14 
+ status=204, reason=No Content 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:24 GMT', 'Content-Type': 'application/json', 'Connection': 'keep-alive', 'CF-RAY': '9b9d70db6b57ecad-MAD', 'Content-Encoding': 'br', 'rndr-id': '64833c79-009f-4d51', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body=None 
+ </msg>
+<msg time="2026-01-06T19:57:23.949993" level="INFO">${Reponse} = &lt;Response [204]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/users/${id_to_delete}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=204</arg>
+<doc>Sends a DELETE request.</doc>
+<status status="PASS" start="2026-01-06T19:57:21.364674" elapsed="2.585373"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:19.888875" elapsed="4.061954"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:19.874153" elapsed="4.078552"/>
+</suite>
+<suite id="s1-s1-s6" name="05 Requete GET User TestAcademy" source="C:\Users\ADmiN\projet-tests\ROBOT_API\05_Requete_GET_User_TestAcademy.robot">
+<test id="s1-s1-s6-t1" name="Test Requete GET User" line="10">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:23.981403" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:23.980496" elapsed="0.001013"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:25.453494" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/users/13 
+ path_url=/api/users/13 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-01-06T19:57:25.453762" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/users/13 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:25 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip', 'rndr-id': '1365d6e8-af6a-4f4a', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '9b9d70e6ed68cc4c-MAD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"data":{"id":13,"email":"janet.zion@api.testacademy.fr","first_name":"Janet","last_name":"Zion-Weaver","avatar":"https://api.testacademy.fr/img/faces/13-image.jpg"},"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-01-06T19:57:25.454037" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/users/${Id_Utilisateur}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-01-06T19:57:23.982232" elapsed="1.471854"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-06T19:57:25.456499" level="INFO">${ReponseJson} = {'data': {'id': 13, 'email': 'janet.zion@api.testacademy.fr', 'first_name': 'Janet', 'last_name': 'Zion-Weaver', 'avatar': 'https://api.testacademy.fr/img/faces/13-image.jpg'}, 'support': {'url': 'htt...</msg>
+<var>${ReponseJson}</var>
+<arg>${Reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.454925" elapsed="0.001662"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-06T19:57:25.457624" level="INFO">{'data': {'id': 13, 'email': 'janet.zion@api.testacademy.fr', 'first_name': 'Janet', 'last_name': 'Zion-Weaver', 'avatar': 'https://api.testacademy.fr/img/faces/13-image.jpg'}, 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${ReponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.457259" elapsed="0.000470"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.458253" elapsed="0.000366"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:25.459558" level="INFO">${Utilisateur} = {'id': 13, 'email': 'janet.zion@api.testacademy.fr', 'first_name': 'Janet', 'last_name': 'Zion-Weaver', 'avatar': 'https://api.testacademy.fr/img/faces/13-image.jpg'}</msg>
+<var>${Utilisateur}</var>
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.459118" elapsed="0.000498"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Utilisateur}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.460126" elapsed="0.000437"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:25.461494" level="INFO">${id} = 13</msg>
+<var>${id}</var>
+<arg>${Utilisateur}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.461081" elapsed="0.000468"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-01-06T19:57:25.462450" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${id}</arg>
+<arg>${Id_Utilisateur}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.462065" elapsed="0.000514"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Utilisateur}</arg>
+<arg>email</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.463309" elapsed="0.000378"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Utilisateur}</arg>
+<arg>first_name</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.464177" elapsed="0.016915"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Utilisateur}</arg>
+<arg>last_name</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.494940" elapsed="0.000738"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:23.971607" elapsed="1.524967"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:23.955958" elapsed="1.548777"/>
+</suite>
+<suite id="s1-s1-s7" name="06 Requete GET Resources TestAcademy" source="C:\Users\ADmiN\projet-tests\ROBOT_API\06_Requete_GET_Resources_TestAcademy.robot">
+<test id="s1-s1-s7-t1" name="Test Requete GET Resources" line="9">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:25.524668" level="INFO">&amp;{Params} = { page=1 | per_page=6 }</msg>
+<var>&amp;{Params}</var>
+<arg>page=1</arg>
+<arg>per_page=6</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.523819" elapsed="0.000937"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:25.526923" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.525790" elapsed="0.001306"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:28.176234" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/unknown?page=1&amp;per_page=6 
+ path_url=/api/unknown?page=1&amp;per_page=6 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-01-06T19:57:28.176449" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/unknown?page=1&amp;per_page=6 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:28 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip', 'rndr-id': 'a09bebad-53a7-41ac', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '9b9d70f7cddaf783-MAD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"page":1,"per_page":6,"total":6,"total_pages":1,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-01-06T19:57:28.176719" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/unknown</arg>
+<arg>params=${Params}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-01-06T19:57:25.529474" elapsed="2.647299"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-06T19:57:28.179798" level="INFO">${ReponseJson} = {'page': 1, 'per_page': 6, 'total': 6, 'total_pages': 1, 'data': [{'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}, {'id': 2, 'name': 'fuchsia rose', 'year':...</msg>
+<var>${ReponseJson}</var>
+<arg>${Reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.177795" elapsed="0.002135"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-06T19:57:28.182563" level="INFO">{'page': 1, 'per_page': 6, 'total': 6, 'total_pages': 1, 'data': [{'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}, {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, {'id': 3, 'name': 'true red', 'year': 2002, 'color': '#BF1932', 'pantone_value': '19-1664'}, {'id': 4, 'name': 'aqua sky', 'year': 2003, 'color': '#7BC4C4', 'pantone_value': '14-4811'}, {'id': 5, 'name': 'tigerlily', 'year': 2004, 'color': '#E2583E', 'pantone_value': '17-1456'}, {'id': 6, 'name': 'blue turquoise', 'year': 2005, 'color': '#53B0AE', 'pantone_value': '15-5217'}], 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${ReponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.182102" elapsed="0.000572"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.183264" elapsed="0.001346"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2026-01-06T19:57:28.241731" level="INFO">${ListeRessources} = [{'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}, {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, {'id': 3,...</msg>
+<var>${ListeRessources}</var>
+<arg>${ReponseJson}</arg>
+<arg>data[:]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2026-01-06T19:57:28.185333" elapsed="0.056508"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2026-01-06T19:57:28.244554" level="INFO">Length is 6.</msg>
+<msg time="2026-01-06T19:57:28.245538" level="INFO">${longueur} = 6</msg>
+<var>${longueur}</var>
+<arg>${ListeRessources}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.243029" elapsed="0.002713"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${longueur} &gt; 0</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.249853" elapsed="0.001391"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2026-01-06T19:57:28.254430" level="INFO">${PremiereRessource} = {'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}</msg>
+<var>${PremiereRessource}</var>
+<arg>${ListeRessources}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.253166" elapsed="0.001392"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereRessource}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.255772" elapsed="0.000482"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereRessource}</arg>
+<arg>name</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.256928" elapsed="0.000272"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereRessource}</arg>
+<arg>color</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.257796" elapsed="0.000285"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:25.521707" elapsed="2.739112"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:25.507719" elapsed="2.755596"/>
+</suite>
+<suite id="s1-s1-s8" name="07 Requete GET Resource TestAcademy" source="C:\Users\ADmiN\projet-tests\ROBOT_API\07_Requete_GET_Resource_TestAcademy.robot">
+<test id="s1-s1-s8-t1" name="Test Requete GET Resource" line="10">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-06T19:57:28.304392" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.296362" elapsed="0.008461"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-01-06T19:57:29.669642" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/unknown/2 
+ path_url=/api/unknown/2 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-01-06T19:57:29.669846" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/unknown/2 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 06 Jan 2026 18:57:29 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Content-Encoding': 'gzip', 'rndr-id': '8d639a27-5d61-43c2', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '9b9d71012b2633db-MAD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-01-06T19:57:29.670105" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/unknown/${Id_Ressource}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-01-06T19:57:28.306900" elapsed="1.363254"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-01-06T19:57:29.672465" level="INFO">${ReponseJson} = {'data': {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy...</msg>
+<var>${ReponseJson}</var>
+<arg>${Reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.670994" elapsed="0.001557"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-06T19:57:29.674044" level="INFO">{'data': {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${ReponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.673627" elapsed="0.000522"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.674686" elapsed="0.000372"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:29.675940" level="INFO">${Ressource} = {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}</msg>
+<var>${Ressource}</var>
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.675532" elapsed="0.000462"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Ressource}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.676570" elapsed="0.000376"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-01-06T19:57:29.677844" level="INFO">${id} = 2</msg>
+<var>${id}</var>
+<arg>${Ressource}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.677449" elapsed="0.000449"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-01-06T19:57:29.678764" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${id}</arg>
+<arg>${Id_Ressource}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.678389" elapsed="0.000498"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Ressource}</arg>
+<arg>name</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.679587" elapsed="0.000383"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Ressource}</arg>
+<arg>year</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.680445" elapsed="0.000343"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Ressource}</arg>
+<arg>color</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.681262" elapsed="0.000335"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Ressource}</arg>
+<arg>pantone_value</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-06T19:57:29.682084" elapsed="0.000341"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:28.294949" elapsed="1.387955"/>
+</test>
+<status status="PASS" start="2026-01-06T19:57:28.266351" elapsed="1.417874"/>
+</suite>
+<status status="PASS" start="2026-01-06T19:57:01.624179" elapsed="28.069547"/>
+</suite>
+<suite id="s1-s2" name="Tests Ihm" source="C:\Users\ADmiN\projet-tests\tests ihm">
+<suite id="s1-s2-s1" name="Connexions-Invalides" source="C:\Users\ADmiN\projet-tests\tests ihm\connexions-invalides.robot">
+<test id="s1-s2-s1-t1" name="Test Utilisateur Valide Mot De Passe Vide" line="10">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:30.415536" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T19:57:30.747636" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:57:30.414933" elapsed="2.950765"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T19:57:33.366185" elapsed="0.217823"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:33.585962" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:57:33.585179" elapsed="18.174557"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:30.413689" elapsed="21.348729"/>
+</kw>
+<kw name="Un Message d'Erreur Doit Etre Visible Apres Une Connexion Incorrecte">
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:51.770508" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:57:51.767334" elapsed="0.446523"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T19:57:52.214598" elapsed="0.228069"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:51.766557" elapsed="0.676486"/>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:52.445258" level="INFO">Clicking element 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:57:52.444567" elapsed="0.525479"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:52.971714" level="INFO">Typing text 'robot' into text field 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<arg>${nom_utilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:57:52.970676" elapsed="0.303680"/>
+</kw>
+<arg>${nom utilisateur}</arg>
+<status status="PASS" start="2026-01-06T19:57:52.443545" elapsed="0.831184"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:53.277201" level="INFO">Clicking element 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:57:53.276242" elapsed="0.254491"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:53.534447" level="INFO">Typing text '' into text field 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<arg>${mot_de_passe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:57:53.531488" elapsed="0.208061"/>
+</kw>
+<arg>${mot de passe}</arg>
+<status status="PASS" start="2026-01-06T19:57:53.275266" elapsed="0.464956"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:53.741854" level="INFO">Clicking button 'css=.homey_login_button'.</msg>
+<arg>${BOUTON VALIDER}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:57:53.741344" elapsed="0.347869"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:53.740680" elapsed="0.349715"/>
+</kw>
+<kw name="Vérifier Que Le Message d'Erreur Est Visible">
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T19:57:54.092387" elapsed="1.114512"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:55.209157" level="INFO">Verifying element 'css=#modal-login .error' does not contain exact text ''.</msg>
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2026-01-06T19:57:55.207353" elapsed="0.062953"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:54.091289" elapsed="1.179395"/>
+</kw>
+<arg>robot</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2026-01-06T19:57:51.764005" elapsed="3.506877"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:30.411266" elapsed="24.861722"/>
+</test>
+<test id="s1-s2-s1-t2" name="Test Utilisateur Vide Mot De Passe Valide" line="11">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:55.278834" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T19:57:55.584310" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:57:55.278186" elapsed="2.666157"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T19:57:57.944808" elapsed="0.360467"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T19:57:58.306338" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:57:58.305784" elapsed="2.466984"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:57:55.277335" elapsed="5.495755"/>
+</kw>
+<kw name="Un Message d'Erreur Doit Etre Visible Apres Une Connexion Incorrecte">
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:58:00.780467" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<msg time="2026-01-06T19:58:10.453562" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-06T19:58:10.454032" level="FAIL">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-06T19:58:00.779575" elapsed="9.682161">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-01-06T19:58:10.462198" elapsed="0.000067"/>
+</kw>
+<status status="FAIL" start="2026-01-06T19:58:00.778269" elapsed="9.684341">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<arg>${nom utilisateur}</arg>
+<status status="NOT RUN" start="2026-01-06T19:58:10.463017" elapsed="0.000068"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<arg>${mot de passe}</arg>
+<status status="NOT RUN" start="2026-01-06T19:58:10.463299" elapsed="0.000053"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<status status="NOT RUN" start="2026-01-06T19:58:10.463663" elapsed="0.000073"/>
+</kw>
+<kw name="Vérifier Que Le Message d'Erreur Est Visible">
+<status status="NOT RUN" start="2026-01-06T19:58:10.463985" elapsed="0.000050"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>robot</arg>
+<status status="FAIL" start="2026-01-06T19:58:00.775046" elapsed="9.689171">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</kw>
+<status status="FAIL" start="2026-01-06T19:57:55.275832" elapsed="15.189565">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</test>
+<test id="s1-s2-s1-t3" name="Test Utilisateur Vide Mot De Passe Vide" line="12">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T19:58:10.469998" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T19:58:10.737647" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:58:10.469607" elapsed="3.140117"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T19:58:13.610344" elapsed="0.149440"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T19:58:13.761391" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:58:13.760643" elapsed="1.965539"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:58:10.469049" elapsed="5.258469"/>
+</kw>
+<kw name="Un Message d'Erreur Doit Etre Visible Apres Une Connexion Incorrecte">
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:58:15.738241" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<msg time="2026-01-06T19:58:25.056813" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-06T19:58:25.057191" level="FAIL">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-06T19:58:15.737329" elapsed="9.323184">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-01-06T19:58:25.061003" elapsed="0.000083"/>
+</kw>
+<status status="FAIL" start="2026-01-06T19:58:15.736442" elapsed="9.324928">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<arg>${nom utilisateur}</arg>
+<status status="NOT RUN" start="2026-01-06T19:58:25.061785" elapsed="0.000115"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<arg>${mot de passe}</arg>
+<status status="NOT RUN" start="2026-01-06T19:58:25.062302" elapsed="0.000098"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<status status="NOT RUN" start="2026-01-06T19:58:25.062687" elapsed="0.000082"/>
+</kw>
+<kw name="Vérifier Que Le Message d'Erreur Est Visible">
+<status status="NOT RUN" start="2026-01-06T19:58:25.063117" elapsed="0.000094"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<status status="FAIL" start="2026-01-06T19:58:15.733060" elapsed="9.330409">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</kw>
+<status status="FAIL" start="2026-01-06T19:58:10.467649" elapsed="14.596650">Element with locator 'xpath=//a[contains(text(),'Se connecter')]' not found.</status>
+</test>
+<test id="s1-s2-s1-t4" name="Test Utilisateur Non Valide Mot De Passe Valide" line="13">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T19:58:25.069087" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T19:58:25.375419" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:58:25.068696" elapsed="3.070854"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T19:58:28.140075" elapsed="0.162753"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T19:58:28.303968" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:58:28.303367" elapsed="44.855107"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:58:25.068036" elapsed="48.091073"/>
+</kw>
+<kw name="Un Message d'Erreur Doit Etre Visible Apres Une Connexion Incorrecte">
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:13.169157" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:13.168293" elapsed="0.393678"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T19:59:13.562680" elapsed="0.194780"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:13.167063" elapsed="0.591031"/>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:13.761037" level="INFO">Clicking element 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:13.760320" elapsed="0.503617"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:14.265627" level="INFO">Typing text 'azerty' into text field 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<arg>${nom_utilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:14.264530" elapsed="0.324158"/>
+</kw>
+<arg>${nom utilisateur}</arg>
+<status status="PASS" start="2026-01-06T19:59:13.758882" elapsed="0.830103"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:14.591985" level="INFO">Clicking element 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:14.591327" elapsed="0.258172"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:14.850768" level="INFO">Typing text 'robot' into text field 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<arg>${mot_de_passe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:14.849954" elapsed="0.254789"/>
+</kw>
+<arg>${mot de passe}</arg>
+<status status="PASS" start="2026-01-06T19:59:14.589974" elapsed="0.515117"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:15.108313" level="INFO">Clicking button 'css=.homey_login_button'.</msg>
+<arg>${BOUTON VALIDER}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:15.106873" elapsed="0.374942"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:15.105542" elapsed="0.376652"/>
+</kw>
+<kw name="Vérifier Que Le Message d'Erreur Est Visible">
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T19:59:15.483885" elapsed="1.626610"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:17.112449" level="INFO">Verifying element 'css=#modal-login .error' does not contain exact text ''.</msg>
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2026-01-06T19:59:17.110924" elapsed="0.049397"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:15.482778" elapsed="1.677816"/>
+</kw>
+<arg>azerty</arg>
+<arg>robot</arg>
+<status status="PASS" start="2026-01-06T19:59:13.165630" elapsed="3.995107"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:58:25.066332" elapsed="52.095229"/>
+</test>
+<test id="s1-s2-s1-t5" name="Test Utilisateur Valide Mot De Passe Non Valide" line="14">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:17.167029" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T19:59:17.581924" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:59:17.166146" elapsed="3.069551"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T19:59:20.236277" elapsed="0.355381"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:20.592726" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:59:20.592157" elapsed="14.838084"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:17.165350" elapsed="18.265401"/>
+</kw>
+<kw name="Un Message d'Erreur Doit Etre Visible Apres Une Connexion Incorrecte">
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:35.435057" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:35.434465" elapsed="0.313798"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T19:59:35.748699" elapsed="0.641920"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:35.433726" elapsed="0.957230"/>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:36.392989" level="INFO">Clicking element 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:36.392377" elapsed="0.508426"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:36.902600" level="INFO">Typing text 'robot' into text field 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<arg>${nom_utilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:36.901683" elapsed="0.391058"/>
+</kw>
+<arg>${nom utilisateur}</arg>
+<status status="PASS" start="2026-01-06T19:59:36.391431" elapsed="0.901684"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:37.296646" level="INFO">Clicking element 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:37.295131" elapsed="0.332257"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:37.630016" level="INFO">Typing text 'azerty' into text field 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<arg>${mot_de_passe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:37.629060" elapsed="0.474838"/>
+</kw>
+<arg>${mot de passe}</arg>
+<status status="PASS" start="2026-01-06T19:59:37.293657" elapsed="0.810668"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:38.106927" level="INFO">Clicking button 'css=.homey_login_button'.</msg>
+<arg>${BOUTON VALIDER}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T19:59:38.106035" elapsed="0.404388"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:38.104954" elapsed="0.405929"/>
+</kw>
+<kw name="Vérifier Que Le Message d'Erreur Est Visible">
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T19:59:38.514581" elapsed="0.723511"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:39.241040" level="INFO">Verifying element 'css=#modal-login .error' does not contain exact text ''.</msg>
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2026-01-06T19:59:39.238636" elapsed="0.055124"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:38.511924" elapsed="0.782176"/>
+</kw>
+<arg>robot</arg>
+<arg>azerty</arg>
+<status status="PASS" start="2026-01-06T19:59:35.432379" elapsed="3.862096"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:17.163297" elapsed="22.131942"/>
+</test>
+<test id="s1-s2-s1-t6" name="Test Utilisateur Non Valide Mot De Passe Non Valide" line="15">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun" type="SETUP">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:39.300636" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T19:59:39.798044" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:59:39.299960" elapsed="2.852791"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T19:59:42.153204" elapsed="0.400083"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T19:59:42.555284" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T19:59:42.554442" elapsed="32.857635"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:39.299101" elapsed="36.113495"/>
+</kw>
+<kw name="Un Message d'Erreur Doit Etre Visible Apres Une Connexion Incorrecte">
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:15.418341" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:00:15.417645" elapsed="0.363107"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T20:00:15.781542" elapsed="0.398830"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:00:15.416602" elapsed="0.764075"/>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:16.182965" level="INFO">Clicking element 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:00:16.182216" elapsed="0.440769"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:16.625037" level="INFO">Typing text 'azerty' into text field 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<arg>${nom_utilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:00:16.623996" elapsed="0.391185"/>
+</kw>
+<arg>${nom utilisateur}</arg>
+<status status="PASS" start="2026-01-06T20:00:16.181121" elapsed="0.834619"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:17.018128" level="INFO">Clicking element 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:00:17.017407" elapsed="0.429346"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:17.448373" level="INFO">Typing text 'azerty' into text field 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<arg>${mot_de_passe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:00:17.447360" elapsed="0.359893"/>
+</kw>
+<arg>${mot de passe}</arg>
+<status status="PASS" start="2026-01-06T20:00:17.016352" elapsed="0.791513"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:17.811377" level="INFO">Clicking button 'css=.homey_login_button'.</msg>
+<arg>${BOUTON VALIDER}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:00:17.810112" elapsed="0.344804"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:00:17.808713" elapsed="0.348135"/>
+</kw>
+<kw name="Vérifier Que Le Message d'Erreur Est Visible">
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T20:00:18.160323" elapsed="2.064652"/>
+</kw>
+<kw name="Element Text Should Not Be" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:20.227752" level="INFO">Verifying element 'css=#modal-login .error' does not contain exact text ''.</msg>
+<arg>${ESPACE POUR AFFICHER LES ERREURS}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies that element ``locator`` does not contain exact the text ``not_expected``.</doc>
+<status status="PASS" start="2026-01-06T20:00:20.225519" elapsed="0.058193"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:00:18.157943" elapsed="2.126179"/>
+</kw>
+<arg>azerty</arg>
+<arg>azerty</arg>
+<status status="PASS" start="2026-01-06T20:00:15.414875" elapsed="4.869470"/>
+</kw>
+<status status="PASS" start="2026-01-06T19:59:39.297263" elapsed="40.987801"/>
+</test>
+<status status="FAIL" start="2026-01-06T19:57:29.713999" elapsed="170.574649"/>
+</suite>
+<suite id="s1-s2-s2" name="Connexions-Valides" source="C:\Users\ADmiN\projet-tests\tests ihm\connexions-valides.robot">
+<test id="s1-s2-s2-t1" name="Le Tableau De Bord Doit Etre Visible Apres Une Connexion Réussie" line="7">
+<kw name="Effectuer Une Connection Réussie" type="SETUP">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:20.327625" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T20:00:20.797261" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T20:00:20.326920" elapsed="3.346495"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T20:00:23.674480" elapsed="0.263494"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T20:00:23.939190" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<msg time="2026-01-06T20:02:28.282149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-06T20:02:28.283284" level="FAIL">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=50461): Read timed out. (read timeout=120)</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="FAIL" start="2026-01-06T20:00:23.938562" elapsed="124.378252">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=50461): Read timed out. (read timeout=120)</status>
+</kw>
+<status status="FAIL" start="2026-01-06T20:00:20.325889" elapsed="127.991250">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=50461): Read timed out. (read timeout=120)</status>
+</kw>
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<status status="NOT RUN" start="2026-01-06T20:02:28.317663" elapsed="0.000116"/>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<arg>${UTILISATEUR VALIDE}</arg>
+<status status="NOT RUN" start="2026-01-06T20:02:28.317996" elapsed="0.000052"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<arg>${MOT DE PASSE VALIDE}</arg>
+<status status="NOT RUN" start="2026-01-06T20:02:28.318340" elapsed="0.000073"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<status status="NOT RUN" start="2026-01-06T20:02:28.318713" elapsed="0.000069"/>
+</kw>
+<status status="FAIL" start="2026-01-06T20:00:20.324281" elapsed="127.994733">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=50461): Read timed out. (read timeout=120)</status>
+</kw>
+<kw name="Effectuer Une Déconnexion Réussie" type="TEARDOWN">
+<kw name="Click Link" owner="Selenium2Library">
+<msg time="2026-01-06T20:02:28.323015" level="INFO">Clicking link 'xpath=//a[contains(text(),'Se connecter')] 10s'.</msg>
+<msg time="2026-01-06T20:02:29.386190" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-06T20:02:29.386757" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</msg>
+<arg>${LIEN SE DECONNECTER}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-06T20:02:28.322204" elapsed="1.072662">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</status>
+</kw>
+<status status="FAIL" start="2026-01-06T20:02:28.321137" elapsed="1.074386">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</status>
+</kw>
+<status status="FAIL" start="2026-01-06T20:00:20.320778" elapsed="129.077657">Setup failed:
+ReadTimeoutError: HTTPConnectionPool(host='localhost', port=50461): Read timed out. (read timeout=120)
+
+Also teardown failed:
+InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</status>
+</test>
+<test id="s1-s2-s2-t2" name="Le Lien De Connexion Devrait Etre Visible Après Une Déconnexion Réussie" line="12">
+<kw name="Effectuer Une Connection Réussie" type="SETUP">
+<kw name="Ouvrir Le Navigateur Et Accéder A La Page d'Accueil" owner="commun">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2026-01-06T20:02:29.528473" level="INFO">Opening browser 'Chrome' to base url 'None'.</msg>
+<msg time="2026-01-06T20:02:29.951982" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=${NAVIGATEUR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-06T20:02:29.527648" elapsed="3.714625"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-06T20:02:33.242678" elapsed="0.429318"/>
+</kw>
+<kw name="Go To" owner="Selenium2Library">
+<msg time="2026-01-06T20:02:33.673145" level="INFO">Opening url 'http://livraison3.testacademy.fr/'</msg>
+<arg>${HOMEY URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-01-06T20:02:33.672501" elapsed="58.662994"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:02:29.513165" elapsed="62.823079"/>
+</kw>
+<kw name="Accéder A La Page De Connexion" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:32.339552" level="INFO">Clicking element 'xpath=//a[contains(text(),'Se connecter')]'.</msg>
+<arg>${LIEN SE CONNECTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:03:32.338825" elapsed="0.335391"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-06T20:03:32.675353" elapsed="0.497075"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:03:32.337330" elapsed="0.835426"/>
+</kw>
+<kw name="Entrer Le Nom d'Utilisateur" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:33.176861" level="INFO">Clicking element 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:03:33.174824" elapsed="0.315108"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:33.492070" level="INFO">Typing text 'robot' into text field 'name=username'.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<arg>${nom_utilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:03:33.490707" elapsed="0.283465"/>
+</kw>
+<arg>${UTILISATEUR VALIDE}</arg>
+<status status="PASS" start="2026-01-06T20:03:33.173242" elapsed="0.601324"/>
+</kw>
+<kw name="Entrer Le Mot De Passe" owner="commun">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:33.776934" level="INFO">Clicking element 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:03:33.776199" elapsed="0.230608"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:34.008505" level="INFO">Typing text 'robot' into text field 'name=password'.</msg>
+<arg>${CHAMP MOT DE PASSE}</arg>
+<arg>${mot_de_passe}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:03:34.007324" elapsed="0.268380"/>
+</kw>
+<arg>${MOT DE PASSE VALIDE}</arg>
+<status status="PASS" start="2026-01-06T20:03:33.775130" elapsed="0.500855"/>
+</kw>
+<kw name="Soumettre Le Formulaire De Connexion" owner="commun">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:34.278001" level="INFO">Clicking button 'css=.homey_login_button'.</msg>
+<arg>${BOUTON VALIDER}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-06T20:03:34.277149" elapsed="0.376717"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:03:34.276432" elapsed="0.377781"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:02:29.511899" elapsed="65.142544"/>
+</kw>
+<kw name="Vérifiez Que Le Tableau De Bord Est Visible">
+<kw name="Wait Until Element Is Not Visible" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:38.570184" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<arg>${CHAMP NOM UTILISATEUR}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2026-01-06T20:03:34.667643" elapsed="4.147880"/>
+</kw>
+<kw name="Title Should Be" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:38.830545" level="INFO">Page title is 'Tableau de bord - Livraison 3'.</msg>
+<arg>${TITRE TABLEAU DE BORD}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-06T20:03:38.816054" elapsed="0.014773"/>
+</kw>
+<status status="PASS" start="2026-01-06T20:03:34.666622" elapsed="4.164455"/>
+</kw>
+<kw name="Effectuer Une Déconnexion Réussie">
+<kw name="Click Link" owner="Selenium2Library">
+<msg time="2026-01-06T20:03:38.834068" level="INFO">Clicking link 'xpath=//a[contains(text(),'Se connecter')] 10s'.</msg>
+<msg time="2026-01-06T20:03:39.023894" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-06T20:03:39.024342" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</msg>
+<arg>${LIEN SE DECONNECTER}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2026-01-06T20:03:38.833510" elapsed="0.195955">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</status>
+</kw>
+<status status="FAIL" start="2026-01-06T20:03:38.832430" elapsed="0.197596">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</status>
+</kw>
+<kw name="Vérifier Que Le Lien De Connexion Est Visible">
+<status status="NOT RUN" start="2026-01-06T20:03:39.031407" elapsed="0.000158"/>
+</kw>
+<status status="FAIL" start="2026-01-06T20:02:29.508494" elapsed="69.523788">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[contains(text(),'Se connecter')] 10s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[contains(text(),'Se connecter')] 10s' is not a valid XPath expression.
+  (Session info: chrome=143.0.7499.170); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff78350a235
+	0x7ff783262630
+	0x7ff782ff16dd
+	0x7ff782ff94c8
+	0x7ff782ffc52f
+	0x7ff782ffc5ef
+	0x7ff783049b27
+	0x7ff78304a58c
+	0x7ff78309eda7
+	0x7ff78309baba
+	0x7ff78303b0ed
+	0x7ff78303bf63
+	0x7ff783535d60
+	0x7ff78352fe8a
+	0x7ff783551005
+	0x7ff78327d71e
+	0x7ff783284e1f
+	0x7ff78326b7c4
+	0x7ff78326b97f
+	0x7ff7832518e8
+	0x7ffb7bf67374
+	0x7ffb7c25cc91
+</status>
+</test>
+<status status="FAIL" start="2026-01-06T20:00:20.295176" elapsed="198.742436"/>
+</suite>
+<status status="FAIL" start="2026-01-06T19:57:29.697355" elapsed="369.345158"/>
+</suite>
+<status status="FAIL" start="2026-01-06T19:57:01.525178" elapsed="397.522459"/>
+</suite>
+<statistics>
+<total>
+<stat pass="12" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Projet-Tests" id="s1" pass="12" fail="4" skip="0">Projet-Tests</stat>
+<stat name="ROBOT API" id="s1-s1" pass="8" fail="0" skip="0">Projet-Tests.ROBOT API</stat>
+<stat name="00 Requête GET HTML Google" id="s1-s1-s1" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.00 Requête GET HTML Google</stat>
+<stat name="01 Requete GET TestAcademy" id="s1-s1-s2" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.01 Requete GET TestAcademy</stat>
+<stat name="02 Requete POST TestAcademy" id="s1-s1-s3" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.02 Requete POST TestAcademy</stat>
+<stat name="03 Requete PUT TestAcademy" id="s1-s1-s4" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.03 Requete PUT TestAcademy</stat>
+<stat name="04 Requete DELETE TestAcademy" id="s1-s1-s5" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.04 Requete DELETE TestAcademy</stat>
+<stat name="05 Requete GET User TestAcademy" id="s1-s1-s6" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.05 Requete GET User TestAcademy</stat>
+<stat name="06 Requete GET Resources TestAcademy" id="s1-s1-s7" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.06 Requete GET Resources TestAcademy</stat>
+<stat name="07 Requete GET Resource TestAcademy" id="s1-s1-s8" pass="1" fail="0" skip="0">Projet-Tests.ROBOT API.07 Requete GET Resource TestAcademy</stat>
+<stat name="Tests Ihm" id="s1-s2" pass="4" fail="4" skip="0">Projet-Tests.Tests Ihm</stat>
+<stat name="Connexions-Invalides" id="s1-s2-s1" pass="4" fail="2" skip="0">Projet-Tests.Tests Ihm.Connexions-Invalides</stat>
+<stat name="Connexions-Valides" id="s1-s2-s2" pass="0" fail="2" skip="0">Projet-Tests.Tests Ihm.Connexions-Valides</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-06T19:57:30.747636" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-01-06T19:57:55.584310" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-01-06T19:58:10.737647" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-01-06T19:58:25.375419" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-01-06T19:59:17.581924" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-01-06T19:59:39.798044" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-01-06T20:00:20.797261" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2026-01-06T20:02:29.951982" level="WARN">The chromedriver version (142.0.7444.175) detected in PATH at C:\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (143.0.7499.170); currently, chromedriver 143.0.7499.169 is recommended for chrome 143.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
