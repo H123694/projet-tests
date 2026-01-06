@@ -2,27 +2,24 @@ pipeline {
     agent any
 
     triggers {
-        // Poll SCM every minute
         pollSCM('* * * * *')
     }
 
     stages {
         stage('Checkout') {
             steps {
-                // Checkout Git repository
                 git branch: 'main', url: 'https://github.com/H123694/projet-tests'
             }
         }
 
-        stage('Test') {
+        stage('Run Robot Tests') {
             steps {
-                // Echo must contain text to avoid compilation error
-                echo "SCM Polling works! Pipeline is running."
-                
-                // Examples to run tests (uncomment if needed)
-                // sh 'python3 tests_unitaires.py'
-                // sh 'python3 tests_api.py'
-                // sh 'robot tests_ihm'
+                echo "Running Robot Framework tests..."
+
+                // Go to Robot project folder
+                dir('PROJET TESTS') {
+                    bat 'robot .'
+                }
             }
         }
     }
