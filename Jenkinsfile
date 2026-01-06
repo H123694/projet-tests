@@ -1,37 +1,32 @@
 pipeline {
     agent any
+    triggers { 
+        pollSCM('H/1 * * * *')
+    }
 
     stages {
-
-        stage('Récupération du code') {
-            steps {
-                git url: 'https://github.com/H123694/projet-tests.git',
-                    branch: 'main'
+        stage('Checkout') {
+            steps {             
+                git branch: 'main', url: 'https://github.com/user/repo.git'
             }
         }
-
-        stage('Tests unitaires') {
+        stage('Build & Test') {
             steps {
-                echo 'Tests unitaires...'
-            }
-        }
-
-        stage('Tests API') {
-            steps {
-                echo 'Tests API...'
-            }
-        }
-
-        stage('Tests IHM') {
-            steps {
-                echo 'Tests IHM...'
+                
+               echo "تشغيل build و test هنا"
+            
+                sh 'python3 tests_unitaires.py'
+            
+                sh 'python3 tests_api.py'
+            
+                sh 'robot tests_ihm'
             }
         }
     }
 
     post {
-        failure {
-            echo 'Au moins un test a échoué'
+        always {
+            echo 
         }
     }
 }
