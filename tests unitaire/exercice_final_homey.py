@@ -21,6 +21,7 @@ class Propriete:
     
     def __str__(self):
         """Retourne une reprÃ©sentation textuelle de la propriÃ©tÃ©."""
+        
         statut = "Disponible" if self.est_disponible else "RÃ©servÃ©e"
         return f"PropriÃ©tÃ© {self.propriete_id}: '{self.nom}' - {self.prix_par_nuit}â‚¬/nuit - {statut}"
 
