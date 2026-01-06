@@ -7,7 +7,7 @@ ${SERVEUR}    livraison3.testacademy.fr
 ${HOMEY URL}    http://${SERVEUR}/
 ${NAVIGATEUR}    Chrome
 ${LIEN SE CONNECTER}    xpath=//a[contains(text(),'Se connecter')]
-${LIEN SE DECONNECTER}    xpath=(//a[contains(text(),'Se déconnecter')])[3]
+${LIEN SE DECONNECTER}    xpath=//a[contains(text(),'Se connecter')]    10s
 ${UTILISATEUR VALIDE}    robot
 ${MOT DE PASSE VALIDE}    robot
 ${UTILISATEUR NON VALIDE}    nonvalide

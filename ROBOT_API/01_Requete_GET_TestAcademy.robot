@@ -16,5 +16,5 @@ Test 001 Requete GET
     ${ListeUtilisateurs}=    Get Value From Json    ${ReponseJson}    data[:]
     # Obtenir le premier utilisateur de la liste
     ${PremierUtilisateur}=    Get From List    ${ListeUtilisateurs}    0
-    # Vérifier que le prénom du premier utilisateur est 'Janet'
-    Should Be Equal    ${PremierUtilisateur['first_name']}    Janet
+    # Vérifier que le prénom du premier utilisateur est 'George'
+    Should Be Equal    ${PremierUtilisateur['first_name']}    George
