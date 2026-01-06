@@ -35,6 +35,7 @@ class TestHomeyManagerSolution(unittest.TestCase):
         propriete = self.manager.ajouter_propriete(4, "Maison Campagne", 100.0)
         
         self.assertEqual(propriete.nom, "Maison Campagne")
+       
         self.assertEqual(propriete.prix_par_nuit, 100.0)
         self.assertTrue(propriete.est_disponible)
     
