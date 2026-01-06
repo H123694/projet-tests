@@ -19,6 +19,7 @@ Test Utilisateur Non Valide Mot De Passe Non Valide      azerty                a
 *** Keywords ***
 
 Vérifier Que Le Message d'Erreur Est Visible
+   
     Wait Until Element Is Visible    ${ESPACE POUR AFFICHER LES ERREURS}
     Element Text Should Not Be    ${ESPACE POUR AFFICHER LES ERREURS}    ${EMPTY}
 
