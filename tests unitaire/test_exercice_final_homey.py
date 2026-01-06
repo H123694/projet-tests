@@ -3,6 +3,7 @@
 import unittest
 from exercice_final_homey import HomeyManager, Propriete
 
+
 class TestHomeyManagerSolution(unittest.TestCase):
     """
     Solution complÃ¨te des tests unitaires pour le systÃ¨me de gestion Homey.
