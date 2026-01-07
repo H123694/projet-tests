@@ -37,7 +37,7 @@ Ouvrir Le Navigateur Et Accéder A La Page d'Accueil
     Go To     ${HOMEY URL}
     
 Accéder A La Page De Connexion
-   Click Element    ${LIEN SE CONNECTER}    15s
+   Click Element    ${LIEN SE CONNECTER}    timeout= 10s
     
    Wait Until Element Is Visible    ${CHAMP NOM UTILISATEUR}
 
@@ -56,7 +56,7 @@ Soumettre Le Formulaire De Connexion
 
 Vérifiez Que Le Tableau De Bord Est Visible
     Title Should Be    ${TITRE TABLEAU DE BORD}
-    Wait Until Element Is Visible    ${LIEN SE DECONNECTER}    5s
+    Wait Until Element Is Visible    ${LIEN SE DECONNECTER}   
 
 Effectuer Une Déconnexion Réussie    
     Click Element    ${LIEN SE DECONNECTER}
