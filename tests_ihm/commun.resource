@@ -37,8 +37,7 @@ Ouvrir Le Navigateur Et Accéder A La Page d'Accueil
     Go To     ${HOMEY URL}
     
 Accéder A La Page De Connexion
-   Click Element    ${LIEN SE CONNECTER}    timeout= 10s
-    
+   Click Element    ${LIEN SE CONNECTER}
    Wait Until Element Is Visible    ${CHAMP NOM UTILISATEUR}
 
 Entrer Le Nom d'Utilisateur
