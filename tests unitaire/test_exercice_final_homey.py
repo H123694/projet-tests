@@ -1,6 +1,12 @@
 # Solution complÃ¨te pour les tests du systÃ¨me de gestion Homey
 
 import unittest
+import sys
+import os
+
+# Ensure local module can be imported when running tests from project root
+sys.path.insert(0, os.path.dirname(__file__))
+
 from exercice_final_homey import HomeyManager, Propriete
 
 

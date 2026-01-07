@@ -5,9 +5,9 @@ Library    Selenium2Library
 *** Variables ***
 ${SERVEUR}    livraison3.testacademy.fr
 ${HOMEY URL}    http://${SERVEUR}/
-${NAVIGATEUR}    Chrome
-${LIEN SE CONNECTER}    xpath=//a[contains(text(),'Se connecter')]
-${LIEN SE DECONNECTER}    xpath=//a[contains(text(),'Se connecter')]    15s
+${NAVIGATEUR}    edge
+${LIEN SE CONNECTER}    xpath=//a[contains(text(),"Se connecter")]
+${LIEN SE DECONNECTER}    xpath=(//a[contains(text(),'Se déconnecter')])[3]   
 ${UTILISATEUR VALIDE}    robot
 ${MOT DE PASSE VALIDE}    robot
 ${UTILISATEUR NON VALIDE}    nonvalide
@@ -37,7 +37,7 @@ Ouvrir Le Navigateur Et Accéder A La Page d'Accueil
     Go To     ${HOMEY URL}
     
 Accéder A La Page De Connexion
-   Click Element    ${LIEN SE CONNECTER}
+   Click Element    ${LIEN SE CONNECTER}    
    Wait Until Element Is Visible    ${CHAMP NOM UTILISATEUR}
 
 Entrer Le Nom d'Utilisateur
@@ -55,10 +55,11 @@ Soumettre Le Formulaire De Connexion
 
 Vérifiez Que Le Tableau De Bord Est Visible
     Title Should Be    ${TITRE TABLEAU DE BORD}
+    Wait Until Element Is Visible    ${LIEN SE DECONNECTER}    5s
 
 Effectuer Une Déconnexion Réussie    
-    Click Link    ${LIEN SE DECONNECTER}
-    Wait Until Element Is Not Visible    ${LIEN SE DECONNECTER}
+    Click Element    ${LIEN SE DECONNECTER}
+    Wait Until Element Is Visible    ${LIEN SE CONNECTER}
 
 Vérifier Que Le Lien De Connexion Est Visible
     Element Should Be Visible    ${LIEN SE CONNECTER}
