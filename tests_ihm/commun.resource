@@ -61,6 +61,7 @@ Effectuer Une Déconnexion Réussie
     Click Element    ${LIEN SE DECONNECTER}
     Wait Until Element Is Visible    ${LIEN SE CONNECTER}
 
+
 Vérifier Que Le Lien De Connexion Est Visible
     Element Should Be Visible    ${LIEN SE CONNECTER}
 
