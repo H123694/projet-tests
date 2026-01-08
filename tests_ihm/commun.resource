@@ -38,8 +38,8 @@ Ouvrir Le Navigateur Et Accéder A La Page d'Accueil
     Go To     ${HOMEY URL}
     
 Accéder A La Page De Connexion
-   Run Keyword And Ignore Error    Click Element    ${LIEN SE CONNECTER}
-    Wait Until Element Is Visible    ${CHAMP NOM UTILISATEUR}    
+    Run Keyword And Ignore Error    Click Element    ${LIEN SE CONNECTER}
+    Wait Until Element Is Visible    ${CHAMP NOM UTILISATEUR}    10s    
 
 Entrer Le Nom d'Utilisateur
     [Arguments]    ${nom_utilisateur}
