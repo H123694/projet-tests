@@ -1,7 +1,7 @@
 @echo off
 echo Lancement de tous les tests...
 
-call lancer_tests_unitaires.bat
+call lancer_tests_unitaire.bat
 if errorlevel 1 exit /b 1
 
 call lancer_tests_api.bat
