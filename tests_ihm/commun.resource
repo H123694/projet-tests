@@ -1,5 +1,6 @@
 *** Settings ***
-Library    Selenium2Library
+Library    Selenium2Library    timeout=20s
+
 
 
 *** Variables ***
